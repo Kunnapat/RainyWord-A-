@@ -52,7 +52,9 @@ public class HomeServer extends JFrame{
     String[] country = {"Bhutan","Ghana","Georgia","Finland","Cook Islands","Burkina Faso","Grenada","Fiji","Cambodia","Dominican Republic","Argentina","Cyprus","Japan","Cameroon","Guam","Cuba","Cruise Ship","Jamaica","Estonia","Kenya","Chad","Belgium","Angola","Germany","Algeria","India","Belarus","Indonesia","Faroe Islands","Bermuda","Guyana","Botswana","Egypt","Croatia","China","Denmark","Isle of Man","Cote D Ivoire","Aruba","Guinea","Chile","Czech Republic","Brazil","French Polynesia","Greece","Albania","British Virgin Islands","Costa Rica","Bulgaria","Guinea Bissau","Cayman Islands","Gambia","Bosnia &amp; Herzegovina","France","Haiti","Guernsey","Armenia","Falkland Islands","Guatemala","Kazakhstan","Antigua &amp; Barbuda","Iran","Congo","Hungary","Bolivia","Ethiopia","Bangladesh","Dominica","Honduras","Greenland","Benin","Jordan","Bahrain","Barbados","Ireland","Djibouti","Andorra","Italy","Azerbaijan","Austria","Israel","French West Indies","Hong Kong","Equatorial Guinea","Brunei","Bahamas","Jersey","Colombia","Gabon","Cape Verde","Iraq","Ecuador","Burundi","Kuwait","Anguilla","Australia","Gibraltar","Belize","Iceland","El Salvador",};
     String[] pp = {"public","static", "void","main","string","args","int","long","double","char","private","for","if","and","or","while","null","System","println","new","break","thread","runnable","action","parse"};
     String[] musictheory = {"Accelerando","Adagio", "Canon","Crescendo","Da Capo","Dolce","Forte","Fortissimo","Fugue","Major","Presto","Quarter","Rubato","Octave","Symphony","Treble","Vibrato","Sharp","Moderato","Grandioso","Decrescendo","Harmonic Major","Harmonic Minor","Mixolydian","Mezzo"};
-	public HomeServer(){
+    String[] si = {"eraser","blue pen", "red pen", "red magic pen","black magic pen", "blue magic pen","green magic pen","orange magic pen","purple folder", "box"};
+    		
+    public HomeServer(){
 		super("Server Home");
 		createTopPanel();
 		createCatPanel();
@@ -138,8 +140,13 @@ public class HomeServer extends JFrame{
 						wordList.insert(new Word(temp*-200,musictheory[i],fallingSpeed), itr1);
 						temp++;
 					}
+				} else if(s.equals("Special")){
+					for(int i = 0; i < si.length; i++){
+						wordList.insert(new Word(temp*-200,si[i],fallingSpeed), itr1);
+						temp++;
+					}
 				}
-				
+		
 				
 			}
 			
@@ -193,6 +200,7 @@ public class HomeServer extends JFrame{
 				catBox.addItem("Country");
 				catBox.addItem("Programming");
 				catBox.addItem("Music");
+				catBox.addItem("Special");
 				catBox.setForeground(Color.GREEN);
 				catBox.setBackground(Color.GRAY);
 				catBox.setPreferredSize(new Dimension(100,50));

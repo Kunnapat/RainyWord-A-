@@ -209,6 +209,36 @@ public class GameServer extends JFrame{
 				}else{
 					inputWord = inputField.getText().toLowerCase();
 				}
+				if(inputWord.equals("3474375000526")){
+					inputWord = "eraser";
+				} 
+				if (inputWord.equals("4548718727810")){
+					inputWord = "blue pen";
+				}
+				if (inputWord.equals("4548718960989")){
+					inputWord = "red pen";
+				}
+				if (inputWord.equals("4902505409967")){
+					inputWord = "red magic pen";
+				}
+				if (inputWord.equals("4902505409950")){
+					inputWord = "black magic pen";
+				}
+				if (inputWord.equals("4902505409974")){
+					inputWord = "blue magic pen";
+				}
+				if (inputWord.equals("4902505409981")){
+					inputWord = "green magic pen";
+				}
+				if (inputWord.equals("4902505410031")){
+					inputWord = "orange magic pen";
+				}
+				if (inputWord.equals("4891595098499")){
+					inputWord = "purple folder";
+				}
+				if (inputWord.equals("15-05-12")){
+					inputWord = "box";
+				}
 				inputField.setText("");
 				System.out.println(inputWord);
 				LinkedListItr itr1 = wordList.first();
