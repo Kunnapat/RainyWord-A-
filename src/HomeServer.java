@@ -49,7 +49,7 @@ public class HomeServer extends JFrame{
     String[] color = {"red", "black", "white","grey","green","yellow","orange","purple","pink"};
     String[] car = {"Honda","Toyota", "Nissan","Mazda","KIA","Hyundai","MercedesBenz","Acura","Lexus","Infiniti","Suzuki","Mitsubishi","Citroen","Chevrolet","Bentley","BMW","Holden","Daewoo","RollsRoyce","Audi","Volswagen","Peugeot","Mini","McLaren","Ford",};
     String[] luxury = {"LouisVuitton","Gucci", "Rolex","Moschino","Hermes","Prada","Givenchy","Chanel","BVLGARI","GiorgioArmani","BOSS","BURBERRY","MARCJACOBS","ChristianDior","Versace","RalphLauren","Patek","Panerai","TomFord","Swarovski","Valentino","MichaelKors","Celine","Vertu","CalvinKlein"};
-    String[] country = {"UnitedStates","China", "India","Japan","Germany","Russia","Brazil","UnitedKingdom","France","Mexico","Italy","SouthKorea","Canada","Spain","Indonesia","Turkey","Australia","Iran","SaudiArabia","Poland","Argentina","Netherlands","Thailand","SouthAfrica","Pakistan"};
+    String[] country = {"Bhutan","Ghana","Georgia","Finland","Cook Islands","Burkina Faso","Grenada","Fiji","Cambodia","Dominican Republic","Argentina","Cyprus","Japan","Cameroon","Guam","Cuba","Cruise Ship","Jamaica","Estonia","Kenya","Chad","Belgium","Angola","Germany","Algeria","India","Belarus","Indonesia","Faroe Islands","Bermuda","Guyana","Botswana","Egypt","Croatia","China","Denmark","Isle of Man","Cote D Ivoire","Aruba","Guinea","Chile","Czech Republic","Brazil","French Polynesia","Greece","Albania","British Virgin Islands","Costa Rica","Bulgaria","Guinea Bissau","Cayman Islands","Gambia","Bosnia &amp; Herzegovina","France","Haiti","Guernsey","Armenia","Falkland Islands","Guatemala","Kazakhstan","Antigua &amp; Barbuda","Iran","Congo","Hungary","Bolivia","Ethiopia","Bangladesh","Dominica","Honduras","Greenland","Benin","Jordan","Bahrain","Barbados","Ireland","Djibouti","Andorra","Italy","Azerbaijan","Austria","Israel","French West Indies","Hong Kong","Equatorial Guinea","Brunei","Bahamas","Jersey","Colombia","Gabon","Cape Verde","Iraq","Ecuador","Burundi","Kuwait","Anguilla","Australia","Gibraltar","Belize","Iceland","El Salvador",};
     String[] pp = {"public","static", "void","main","string","args","int","long","double","char","private","for","if","and","or","while","null","System","println","new","break","thread","runnable","action","parse"};
     String[] musictheory = {"Accelerando","Adagio", "Canon","Crescendo","Da Capo","Dolce","Forte","Fortissimo","Fugue","Major","Presto","Quarter","Rubato","Octave","Symphony","Treble","Vibrato","Sharp","Moderato","Grandioso","Decrescendo","Harmonic Major","Harmonic Minor","Mixolydian","Mezzo"};
 	public HomeServer(){
@@ -94,7 +94,7 @@ public class HomeServer extends JFrame{
 			}
 
 			private void getWordList() {
-					String s = "Color";
+					String s = "Country";
 				try{
 					s = (String) catBox.getSelectedItem();
 				}catch (Exception e){
